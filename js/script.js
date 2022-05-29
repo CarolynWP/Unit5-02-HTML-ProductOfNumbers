@@ -5,25 +5,24 @@ function numberAdding(){
 	// variables
 	let firstNumber = parseInt(document.getElementById("first").value);
 	let secondNumber = parseInt(document.getElementById("second").value);
-	let sum = firstNumber
+	let sum = 0
 	
-	//for loop to add both numbers together
-	 for (let counter = 0;counter <= secondNumber; counter++) {
-		 if (counter = secondNumber){
-		 sum = sum + counter
-		 }
-		 else {
-			 sum = sum + counter
-		 }
+	//for loop to multiply both numbers together
+	 for (let counter = 0;counter < secondNumber; counter++) {
+			sum = sum + firstNumber
 	} 
 	
 	 //another for loop for negative numbers
-	for (let counter = 0;counter >= secondNumber; counter--){
-			 if (counter = secondNumber){
-		 sum = sum + counter
-			 }
+	for (let counter = 0;counter > secondNumber; counter--){
+		if (firstNumber > 0)
+		 sum = sum - firstNumber
+
+		else if (firstNumber > 0 && secondNumber > 0){
+			sum = sum + firstNumber
+		}
+
 		else {
-			sum = sum + counter
+			sum = sum - firstNumber
 		}
 	} 
 
